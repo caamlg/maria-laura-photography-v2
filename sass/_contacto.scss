@@ -1,0 +1,71 @@
+.contacto {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__titulo {
+    @include h3
+}
+.contacto__enlaces {
+    a {
+    text-decoration: none;
+    color: $gris;
+    font-family: 'Varta', sans-serif;
+    display: block;
+    &:hover {
+        color: $celeste;
+        text-decoration: underline;
+    }
+    }
+}
+.mapa {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position:absolute;
+    }
+}
+.QR {
+    display: none;
+}
+.contacto__form {
+    font-family: 'Varta', sans-serif;
+    font-size: 0.88rem;
+    line-height: 130%;
+    color: #303238;
+    padding: 20px;
+}
+.form__fieldset {
+    background-color: #66c1be;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form__titulo {
+    @include h4
+}
+.fieldset__label {
+    padding: 10px 0px 5px 0
+}
+.fieldset__label--row {
+    display: flex;
+}
+input.botones {
+    align-self: center;
+    padding: 4px;
+    margin: 3px;
+}
+textarea {
+    font-family: Varta, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}

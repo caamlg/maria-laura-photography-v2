@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin: 15px;
+    color: $gris;
+    font-size: 1rem;
+    font-family: 'Varta', sans-serif;
+    text-align: justify;
+}
+a {
+    color: $verdeos;
+    text-decoration: none;
+    &:hover{color: $verdeos;}
+}
+body {
+    background-color: $amarillo;
+}
+.fixed-top {
+    top: -40px;
+    background-color: $gris !important;
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.75) !important;
+    transform: translateY(40px);
+    transition: all .3s;
+    z-index: 1030;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+.header__imagen {
+    @extend .header;
+    background-size: cover;
+    background-position: center;
+}
+@each $imagen in home, servicios, portfolio, sobremi, contacto, 404, presupuesto {
+    .header__imagen--#{$imagen} {
+    background-image: url('../images/#{$imagen}.jpg');
+    }
+}
+.logoTexto {
+font-size: 1.88rem;
+font-family: 'Amatic SC', cursive;
+color: $rosa;
+font-weight: 700;
+text-align: center;
+letter-spacing: 2px;
+margin-left: 15px;
+display: none;
+}
+.nav__redes {
+    display: none;
+}
+.header__titulo {
+    margin: 0px 10vw;
+    padding: 10px;
+    position: relative;
+        h1 {
+            @include h1;
+            text-shadow: #000 1px 0 10px;
+        }
+}
+.header__texto {
+    p {
+        text-align: center;
+        color: #fff;
+        text-shadow: #000 1px 0 10px;
+        font-style: italic;
+    }
+}
+footer {
+    background-color: $verde;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 10px 0px;
+    grid-template-areas:
+      "footLogo"
+      "footLogo"
+      "footEnlacesUno"
+      "footEnlacesDos"
+      "footContacto"
+      "footCopy";
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer__logo {
+    font-size: 0.85rem;
+    overflow: hidden;
+    color: $gris;
+    text-align: justify;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    grid-area: footLogo;
+    margin-bottom: 30px;
+    img {
+        margin-right: 30px;
+    }
+}
+.footer__enlaces--uno {
+    nav, ul, ul a { @extend .footer__enlaces--uno }
+    display: inline-block;
+    list-style: none;
+    color: $verdeos;
+    font-size: 0.85rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    grid-area: footEnlacesUno;
+    }
+    .footer__enlaces--dos {
+        nav, ul, ul a { @extend .footer__enlaces--dos }
+        display: inline-block;
+        list-style: none;
+        color: $verdeos;
+        font-size: 0.85rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        grid-area: footEnlacesDos;
+        }
+.footer__enlaces--hover, .footer__enlaces--uno ul a:hover, .footer__enlaces--dos ul a:hover {
+    color: #0e9cdd;
+}
+.footer__contacto {
+    text-align: center;
+    grid-area: footContacto;
+}
+.footer__titulo {
+    h5 { @include h5 
+    }
+}
+.footer__contacto--texto {
+    a {
+    color: $gris !important;
+    font-size: 0.85rem !important;
+    line-height: 80%;
+    padding: 5px !important;
+    text-decoration: none !important;
+    display: block;
+    text-align: left;
+    }
+}
+img.footer__contacto--logos {
+        width: 60px;
+}
+.footer__copyright {
+    color: $gris;
+    font-size: 0.75rem;
+    padding: 5px;
+    justify-self: center;
+    grid-area: footCopy;
+    a {
+        text-decoration: none;
+        &:hover { color: $verdeos;
+        text-decoration: underline; }
+    }
+}
+.pagina-error {
+    p {
+        text-align: center;
+        color: #fff;
+    }
+}

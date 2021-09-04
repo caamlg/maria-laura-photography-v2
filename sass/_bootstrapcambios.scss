@@ -1,0 +1,91 @@
+.navbar-dark .navbar-nav {
+  .nav-link {
+    color: $celeste;
+    text-decoration: underline 0.15em rgba(184, 242, 230, 0);
+    text-underline-offset: 0.1em;
+    transition: all 0.5s;
+
+    &:hover,
+    &:focus {
+      color: $verde;
+      text-decoration-color: rgba(184, 242, 230, 1);
+      text-underline-offset: 0.4em;
+    }
+    &.disabled {
+      color: $celeste;
+    }
+  }
+
+  .show > .nav-link,
+  .nav-link.active {
+    color: $celeste 
+  }
+}
+.nav-justified {
+    > .nav-link,
+    .nav-item {
+      flex-basis: 0;
+      flex-grow: 0;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+  }
+.navbar, .dropdown-menu {
+    background-color: rgba(94, 100, 114, 0.7);
+    box-shadow: 0px 11px 15px 1px rgba(0,0,0,0.75);
+    color: $celeste;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 0px !important;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+}
+.dropdown-item {
+  color: $celeste;
+}
+.dropdown-item:hover {
+  color: $verde;
+  background-color: rgba(94, 100, 114, 0.7);
+}
+
+.accordion-button:focus, .accordion-button, .accordion-button:not(.collapsed) {
+  color: $gris;
+  background-color: #fed8d7;
+  border-color: #b8f2e6;
+  box-shadow: 0 0 0 0.25rem rgba(174, 217, 224, 0.25)
+}
+.accordion-body {
+  color: #5e6472;
+  background-color: #c6e4e9;
+}
+
+.card-body__bg {
+  background-color: $amarillo;
+  }
+
+.card-title__color {
+  color: $verdeos;
+  }
+  
+.precio-color {
+  color: $verdeos;
+}
+  
+.btn-color {
+  background-color: $verde;
+  &:hover {
+    background-color: $verdeos
+  }
+}
+
+.btn-agregar {
+    background-color: $verdeos;
+    color: white;
+  &:hover {
+    background-color: $verde;
+    color: black;
+  }
+}

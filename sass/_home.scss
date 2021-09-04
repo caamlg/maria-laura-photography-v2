@@ -1,0 +1,21 @@
+.mainHome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+}
+.mainHome__texto, p.mainHome__texto {
+        overflow: hidden;
+}
+img.mainHome__imagen {
+        padding: 5px;
+        width: 70vw;
+        object-fit: cover;
+}
+.mainHome__opciones--titulo {
+        @include h3
+}
+.otros-home {
+        background-color: #c6e4e9
+}
