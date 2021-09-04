@@ -8,7 +8,7 @@ En la realización del proyecto se vieron:
 * Git
 * SEO
 ## El sitio
-Para visualizar cómo se ve en este momento el proyecto, hacé clic [acá](https://caamlg.github.io/maria-laura-photography/).
+Para visualizar cómo se ve en este momento el proyecto, hacé clic [acá](https://caamlg.github.io/maria-laura-photography-v2/).
 
 Con el afán de mantener la estética del emrpendimiento en sí, fue utilizada una paleta de colores claros pero variados, y se utilizaron imágenes tomadas por la propia fotógrafa del emprendimiento para poder mostrar su trabajo, por ejemplo la siguiente:
 
