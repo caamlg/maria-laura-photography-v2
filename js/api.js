@@ -1,15 +1,8 @@
 $(() => {
-    let miFormulario = document.getElementById("formulario");
-    miFormulario.addEventListener("submit", validarFormulario);
+     let mailUsuario = 'test';
 
-    function validarFormulario(e) {
+    $('#btnEnviar').on('click', (e) => {
         e.preventDefault();
-        console.log("Formulario Enviado");
-    }
-
-    let mailUsuario = 'test';
-
-    $('#btnEnviar').on('click', () => {
         let error = "";
         $('#incompleto').css("visibility", "hidden");
         $('#mailError').css("visibility", "hidden");
